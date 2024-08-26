@@ -114,8 +114,9 @@ section:nth-child(even) {
     background: white;
 }
 /* secciones */
+
 #section1, #section2 {
-    margin: 10px;
+    margin: 0;
     padding: 0;
 }
 #section1 h2, #section2 h2 {
@@ -147,7 +148,28 @@ section:nth-child(even) {
 .carousel-container {
     max-width: 45%;
 }
+/* seccion resumen informe */
+/* Estilo para el encabezado con fondo negro */
+div h2 {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    position: relative;
+}
 
+/* Contenedor del encabezado */
+#first-report_section {
+    width: 100%;
+}
+
+/* Alinear el span a la derecha */
+#align-right {
+    position: absolute;
+    right: 15px; /* Alinea con el padding del h2 */
+    top: 50%;
+    transform: translateY(-50%);
+}
 /* seccion 2÷ */
 /* Sección Sectores de Estudio */
 .sector {

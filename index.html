@@ -29,10 +29,10 @@
                       <a class="nav-link active" aria-current="page" href="#mainSection">CEE</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#section1">Acerca del Centro</a>
+                      <a class="nav-link" href="#section1" onclick="toggleAndScroll('section1')">Acerca del Centro</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#section1">Sectores de estudio</a>
+                      <a class="nav-link" href="#section2" onclick="toggleAndScroll1('section2')">Sectores de estudio</a>
                     </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#section2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -192,7 +192,7 @@
           los salarios y las condiciones laborales. Factores como la educación, las habilidades de la 
           fuerza laboral y las políticas de empleo influyen en este sector. Por otro lado, la distribución 
           del ingreso, que estudia cómo se distribuyen los ingresos entre los
-          diferentes grupos de la población. Este aspecto se analiza a través de indicadores
+          diferentes grupos de la población. Este último, se analiza a través de indicadores
           como el coeficiente de Gini, que mide la desigualdad, y la distribución porcentual
           del ingreso entre los distintos quintiles o deciles de la población. Las políticas
           sociales, fiscales y laborales influyen en la equidad y la distribución del ingreso.</p>
@@ -201,6 +201,9 @@
   </div>
 </section>
 <!-- ################### Sección Actividad Económica ###############################-->
+<div id="first-report_section">
+  <h2>Primer informe macroeconómico <span id="align-right">-</span></h2>
+</div>
 <section id="section1-chart mainTitleChart" class="left">
   <h2>Actividad económica</h2>
   <div id="plot-box">

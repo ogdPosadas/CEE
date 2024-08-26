@@ -10,6 +10,13 @@ function toggleInfo(sectionId) {
         toggleIcon.textContent = '+';
     }
 }
+// Listener para el enlace en el navbar de la seccion 1
+function toggleAndScroll(sectionId) {
+    toggleInfo(sectionId);  // Despliega o contrae la información
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });  // Redirige a la sección
+}
+
+// seccion 2
 function toggleInfo1(sectionId) {
     var infoContainer = document.querySelector(`#${sectionId} #infoContainer`);
     var toggleIcon = document.querySelector(`#${sectionId} h2 span`);
@@ -22,6 +29,13 @@ function toggleInfo1(sectionId) {
         toggleIcon.textContent = '+';
     }
 }
+
+// Listener para el enlace en el navbar de la seccion 2
+function toggleAndScroll1(sectionId) {
+    toggleInfo1(sectionId);  // Despliega o contrae la información
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });  // Redirige a la sección
+}
+
 function toggleSubsection(subsectionId) {
     var subsectionInfo = document.querySelector(`#${subsectionId}`);
     var toggleIcon = subsectionInfo.previousElementSibling.querySelector('span'); // Buscar el span en el h3 anterior
