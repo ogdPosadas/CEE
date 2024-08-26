@@ -1,0 +1,285 @@
+/* Reset básico */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Montserrat', sans-serif !important;
+    scroll-behavior: smooth !important;
+    height: 100%;
+    background-color:  white;
+}
+
+/* Fullscreen section */
+/* Animación de imagenes */
+/* Animación de entrada desde las esquinas y el centro */
+/* Animación de entrada desde las esquinas y el centro */
+@keyframes slideInFromTopLeft {
+    from {
+        transform: translate(-100%, -100%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromTopRight {
+    from {
+        transform: translate(100%, -100%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottomCenter {
+    from {
+        transform: translate(0, 100%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+/* Estilo para los enlaces que contienen las imágenes */
+#mainSection .animated-link {
+    position: absolute;
+    height: auto;
+    opacity: 0;
+}
+
+#mainSection .animated-link img {
+    width: 120px; /* Puedes ajustar el tamaño según tus necesidades */
+}
+
+/* Animación aplicada a los enlaces */
+#mainSection .animated-link:first-of-type {
+    top: 15%;
+    left: 20%;
+    animation: slideInFromTopLeft 1s ease-out forwards;
+}
+
+#mainSection .animated-link:nth-of-type(2) {
+    top: 15%;
+    right: 20%;
+    animation: slideInFromTopRight 1s ease-out forwards;
+}
+
+#mainSection .animated-link:nth-of-type(3) {
+    bottom: 15%;
+    left: 45%;
+    transform: translateX(-50%);
+    animation: slideInFromBottomCenter 1s ease-out forwards;
+}
+/* Otros */
+.fullscreen-section {
+    height: 100vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px;
+}
+
+#mainSection .content h1 {
+    color: black;
+    font-size: 3vw;
+    font-weight: bold;
+}
+#mainSection .content p {
+    color: rgb(64, 64, 64);
+    font-size: 1.5vw;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+section:nth-child(odd) {
+    background: #f4f4f4;
+}
+
+section:nth-child(even) {
+    background: white;
+}
+/* secciones */
+#section1, #section2 {
+    margin: 10px;
+    padding: 0;
+}
+#section1 h2, #section2 h2 {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#section1 h2:hover, #section2 h2:hover {
+    background-color: #40e0d0; /* Verde turquesa */
+    color: white;
+}
+#infoContainer {
+    display: none;
+    gap: 20px;
+    align-items: center;
+}
+#infoText {
+    max-width: 50%;
+    text-align: justify; /* Justifica el texto del párrafo */
+}
+
+#infoText p {
+    padding: 2%;
+}
+.carousel-container {
+    max-width: 45%;
+}
+
+/* seccion 2÷ */
+/* Sección Sectores de Estudio */
+.sector {
+    margin-bottom: 20px;
+}
+
+.sector h3 {
+    background-color: #e2e2e2;
+    color: #333;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sector h3:hover {
+    background-color: #40e0d0;
+}
+
+.subsection-info {
+    display: none; /* O usa el valor por defecto del navegador */
+    align-items: center;
+}
+
+.subsection-info p, .subsection-info img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.subsection-info p {
+    text-align: justify;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.subsection-info img {
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
+    margin-left: 20px; /* Espacio entre el texto y la imagen */
+}
+
+/* Graficos */
+.left h2 {
+    text-align: left;
+}
+.right h2 {
+    text-align: right;
+    padding-right: 20% !important;
+}
+.chart-container {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #fff;
+  }
+  .chart-title, .chart-source {
+    padding: 5px;
+    text-align: left;
+    font-weight: bold;
+  }
+  .chart-subtitle {
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    text-align: left;
+    font-size: 15px;
+    font-style: italic;
+   }
+  
+  .chart-footnote {
+    border-top: 1px solid #ccc;
+    padding: 5px;
+    text-align: left;
+    font-size: 13px;
+  }
+  .chart-figure {
+    padding: 10px;
+    text-align: center;
+    height: 610px;
+  }
+  
+  #plot-box {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 20 !important;
+  }
+  #plot-box p {
+    max-width: 40%;
+    text-align: justify; /* Justifica el texto del párrafo */
+    font-size: 1.5vw;
+}
+
+/* Animacion secciones */
+/* Inicialmente ocultamos las secciones */
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Clase que se añade cuando la sección es visible */
+.section-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Ultima seccion */
+/* Estilo para la sección */
+.link-section {
+    background-color: black !important; /* Color de fondo negro */
+    padding: 20px; /* Espaciado alrededor del contenido */
+    text-align: left; /* Alineación del texto al centro */
+}
+
+.link-section a {
+    color: white; /* Color del texto blanco */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.link-section a:hover {
+    color: #40E0D0; /* Color turquesa al pasar el ratón */
+}
+
+/* links de los organismos */
+span a {
+    color: #333; /* Color del texto blanco */
+    text-decoration: none; /* Sin subrayado */
+}
+
+span a:hover {
+    color: #40E0D0; /* Color turquesa al pasar el ratón */
+}
