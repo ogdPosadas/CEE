@@ -74,3 +74,9 @@ document.addEventListener("DOMContentLoaded", function() {
     // Ejecutamos la función al cargar la página para mostrar las secciones visibles inicialmente
     checkVisibility();
 });
+
+// Deteccion de dispositivo
+// Detecta si el usuario está en un dispositivo móvil
+if (/Mobi|Android/i.test(navigator.userAgent)) {
+    alert("Esta página está optimizada para escritorio. Te recomendamos visitarla desde un ordenador para una mejor experiencia.");
+}
