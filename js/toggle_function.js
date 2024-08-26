@@ -78,5 +78,5 @@ document.addEventListener("DOMContentLoaded", function() {
 // Deteccion de dispositivo
 // Detecta si el usuario está en un dispositivo móvil
 if (/Mobi|Android/i.test(navigator.userAgent)) {
-    alert("Esta página está optimizada para escritorio. Te recomendamos visitarla desde un ordenador para una mejor experiencia.");
+    alert("Esta página contiene gráficos interactivos, datos e información dińamica que se encuentra optimizada exclusivamente para escritorio. Te recomendamos visitar el sitio desde un ordenador para una mejor experiencia. Nos encontramos trabajando para que pueda verse de la misma forma desde el celular. Sepan disculpar");
 }
